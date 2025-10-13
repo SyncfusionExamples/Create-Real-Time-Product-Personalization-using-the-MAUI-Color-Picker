@@ -5,16 +5,15 @@
              xmlns:local="clr-namespace:ColorPickerSample"
              x:Class="ColorPickerSample.MainPage">
 
-    <Grid RowDefinitions="Auto,*" Margin="80">
+    <Grid RowDefinitions="Auto,*" Margin="20">
 
-        <Image x:Name="shirtImage" Grid.Row="0" Source="shirt.png" WidthRequest="400" 
-               Background="Navy" />
+        <Image x:Name="shirtImage" Grid.Row="0" Source="shirt.png" 
+               WidthRequest="400" Background="Navy" />
 
-        <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" PaletteCellShape="Circle" IsInline="True"  
-                              ShowRecentColors="False" ShowNoColor="False" IsColorModeSwitcherVisible="False"
-                              ColorMode="Palette" ShowInputArea="False" PaletteColumnSpacing="5" PaletteRowSpacing="5"
-                              PaletteColumnCount="5" PaletteRowCount="2" ColorChanged="PaletteColorChanged"
-                              HorizontalOptions="Center" VerticalOptions="Center"/>
+        <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" IsInline="True" 
+                              PaletteColumnCount="5" PaletteRowCount="1"
+                              ColorMode="Palette" ColorChanged="PaletteColorChanged" 
+                              PaletteColumnSpacing="5"/>
 
     </Grid>
 

@@ -5,14 +5,17 @@ This sample demonstrates how to implement real-time product personalization usin
 ## Sample
 
 ```xaml
-    <Image x:Name="shirtImage" Grid.Row="0" Source="shirt.png" WidthRequest="400" 
-       Background="Navy"/>
+    <Grid RowDefinitions="Auto,*" Margin="20">
 
-    <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" PaletteCellShape="Circle" IsInline="True"  
-                        ShowRecentColors="False" ShowNoColor="False" IsColorModeSwitcherVisible="False"
-                        ColorMode="Palette" ShowInputArea="False" PaletteColumnSpacing="5" PaletteRowSpacing="5"
-                        PaletteColumnCount="5" PaletteRowCount="2" ColorChanged="PaletteColorChanged"
-                        HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Image x:Name="shirtImage" Grid.Row="0" Source="shirt.png" 
+               WidthRequest="400" Background="Navy" />
+
+        <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" IsInline="True" 
+                              PaletteColumnCount="5" PaletteRowCount="1"
+                              ColorMode="Palette" ColorChanged="PaletteColorChanged" 
+                              PaletteColumnSpacing="5"/>
+
+    </Grid>
 ```
 
 ## Requirements to run the demo
