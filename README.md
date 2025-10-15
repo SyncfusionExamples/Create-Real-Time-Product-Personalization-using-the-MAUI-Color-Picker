@@ -10,10 +10,10 @@ This sample demonstrates how to implement real-time product personalization usin
         <Image x:Name="shirtImage" Grid.Row="0" Source="shirt.png" 
                WidthRequest="400" Background="Navy" />
 
-        <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" IsInline="True" 
-                              PaletteColumnCount="5" PaletteRowCount="1"
-                              ColorMode="Palette" ColorChanged="PaletteColorChanged" 
-                              PaletteColumnSpacing="5"/>
+        <inputs:SfColorPicker x:Name="colorPicker" Grid.Row="1" IsInline="True" ColorMode="Palette"
+                              PaletteColumnCount="5" PaletteRowCount="2" PaletteColumnSpacing="5"
+                              ColorChanged="PaletteColorChanged" ShowRecentColors="False"
+                              IsColorModeSwitcherVisible="False"/>
 
     </Grid>
 ```
